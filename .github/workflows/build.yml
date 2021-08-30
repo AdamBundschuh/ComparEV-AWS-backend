@@ -37,7 +37,7 @@ jobs:
 
           #Build's job
   build:
-    #Depends on sonar's job
+    #Requires Unit tests pass
     needs: Unit tests
     name: Build
     #Run on Ubuntu using the latest version
