@@ -35,10 +35,10 @@ jobs:
         run:
           mvn -B test
 
-          #Build's job
+  #Build's job
   build:
     #Requires Unit tests pass
-    needs: Unit tests
+    needs: tests
     name: Build
     #Run on Ubuntu using the latest version
     runs-on: ubuntu-latest
