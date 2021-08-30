@@ -1,0 +1,40 @@
+### Get all Article Topics.
+GET http://localhost:8080/api/articleTopics
+Accept: application/json
+
+### Get an Article Topic with the given id.
+GET http://localhost:8080/api/articleTopics/1
+
+### Get all Articles for a Topic.
+GET http://localhost:8080/api/articleTopics/1/articles
+Content-Type: application/json
+
+### Get all Articles
+GET http://localhost:8080/api/articles
+Content-Type: application/json
+
+### Get a single Article for a Topic.
+GET http://localhost:8080/api/articleTopics/4/articles/5
+
+### Add a comment to an Article.
+PATCH http://localhost:8080/api/articleTopics/7/articles/9/comments
+Content-Type: application/json
+
+Test comment for article
+
+### Get all Electric Vehicles.
+GET http://localhost:8080/api/electricVehicles
+Content-Type: application/json
+
+### Get a single Electric Vehicle.
+GET http://localhost:8080/api/electricVehicles/75
+
+### Add a comment to an Electric Vehicle Review.
+PATCH http://localhost:8080/api/electricVehicles/85/comments
+Content-Type: application/json
+
+Test comment for review
+
+### Retrieve list of EVs based on price
+GET http://localhost:8080/api/electricVehicles/compare/30000
+Content-Type: application/json
